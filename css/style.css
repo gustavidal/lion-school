@@ -17,10 +17,14 @@ header {
     background-color: var(--main-color);
     align-items: center;
     justify-content: space-between;
+    padding: 0 100px;
 }
 
-header img {
-    margin: 100px;
+header .sair {
+    display: flex;
+    gap: 10px;
+    font-size: 36px;
+    color: #fff;
 }
 
 main {
@@ -127,4 +131,29 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .sair span {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .hero-left p {
+        font-size: 30px;
+        text-align: center;
+        width: 250px;
+    }
+
+    .hero .hero-left .devices {
+        display: none;
+    }
 }
