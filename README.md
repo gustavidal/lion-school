@@ -1,1 +1,1 @@
-# lion-school
+# Projeto Lion School SENAI
