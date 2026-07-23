@@ -1,19 +1,86 @@
+:root {
+    --main-color: #3347B0;
+}
+
 body {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     display: flex;
     height: 100px;
     width: 100%;
-    background-color: #3347B0;
+    background-color: var(--main-color);
     align-items: center;
     justify-content: space-between;
 }
 
 header img {
     margin: 100px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    height: 140px;
+    width: 100%;
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: center;
+}
+
+.frame {
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frame .info {
+    display: flex;
+    gap: 35px;
+}
+
+.frame .info .icons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.frame .info .data {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.frame .copyright {
+    font-size: 20px;
+}
+
+.frame .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.frame .social-media .border {
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
